@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Members</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <include src="../src/views/header.html"></include>
+
+    <h1>Vacation Planner</h1>
+
+    <section class="family-members">
+        <h2>Family Members</h2>
+        <div id="family-list">
+            <!-- Family members will be displayed here -->
+        </div>
+
+        <div class="add-family-member">
+            <h3>Add Family Member</h3>
+            <input type="text" id="firstName" placeholder="First Name">
+            <button id="addFamilyMember">Add</button>
+        </div>
+    </section>
+
+    <section class="update-items">
+        <h2>Update Items for a Family Member</h2>
+        <input type="text" id="updateFirstName" placeholder="First Name">
+        <select id="updateAction">
+            <option value="1">Add a new item</option>
+            <option value="2">Replace an item</option>
+            <option value="3">Delete an item</option>
+        </select>
+        <div id="updateItemFields">
+            <!-- Dynamic fields for adding/replacing items -->
+        </div>
+        <button id="updateItems">Update</button>
+    </section>
+
+    <section class="delete-family-member">
+        <h2>Delete a Family Member</h2>
+        <input type="text" id="deleteFirstName" placeholder="First Name">
+        <button id="deleteFamilyMember">Delete</button>
+    </section>
+
+    <section class="display-family-members">
+        <h2>Display Family Members</h2>
+        <div id="familyDisplay">
+            <!-- Family members' details will be displayed here -->
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
